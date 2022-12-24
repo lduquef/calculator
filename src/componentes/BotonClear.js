@@ -1,6 +1,7 @@
 import React from "react";
+import '../style-sheets/BotonClear.css'
 const BotonClear = (props) => (
-  <div className="boton-clear">
+  <div className="Boton-clear">
   	{props.children}
   </div>
 );
