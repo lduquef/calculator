@@ -1,17 +1,22 @@
+@font-face {
+    font-family: "DS-DIGIT";
+    src: url('./DS-DIGIT.TTF') format('truetype');
+    font-weight: 150;
+    font-style: normal; 
+}
 .input {
     height: 75px;
     border-radius: 50px;
     margin: 2px solid #888;
+    font-family: "DS-DIGIT",sans-serif;
     margin-bottom: 20px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 40px;
     background-color: #0a0a23;
     color: white;
     padding: 18px;
     padding-right: 30px;
-    box-shadow: -1px 4px 1px 1px white;
-
 }
