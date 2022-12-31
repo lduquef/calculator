@@ -2,22 +2,25 @@ import './App.css';
 import Boton from './componentes/Boton';
 import BotonClear from './componentes/BotonClear';
 import Pantalla from './componentes/Pantalla';
-import logo from './imagenes/freecodecamp-logo.png'
 import { useState } from 'react';
+import {evaluate} from 'mathjs';
+import LogoContenedor from './componentes/LogoContenedor';
 
 function App() {
   const [input,setInput] = useState('');
   const agregarInput =val=> {
     setInput(input + val);
   };
+  const calcularResultado = () => {
+    if (input) {
+      setInput(evaluate(input))
+    } else {
+      alert("Por Favor ingrese valores, para realizar los cálculos")
+    }
+  };
   return (
     <div className="App">
-      <div className='logo-contenedor'>
-        <img
-        src= {logo}
-        className='logo'
-        alt='logo page'/>
-      </div>
+      <LogoContenedor/>
       <div className='contenedor-calculadora'>
         <Pantalla input={input}/>
         <div className='fila'>
@@ -36,13 +39,13 @@ function App() {
           <Boton manejarClic={agregarInput}>7</Boton>
           <Boton manejarClic={agregarInput}>8</Boton>
           <Boton manejarClic={agregarInput}>9</Boton>
-          <Boton>*</Boton>
+          <Boton manejarClic={agregarInput}>*</Boton>
         </div>
         <div className='fila'>
-          <Boton>=</Boton>
-          <Boton>0</Boton>
-          <Boton>.</Boton>
-          <Boton>/</Boton>
+          <Boton manejarClic={calcularResultado}>=</Boton>
+          <Boton manejarClic={agregarInput}>0</Boton>
+          <Boton manejarClic={agregarInput}>.</Boton>
+          <Boton manejarClic={agregarInput}>/</Boton>
         </div>
         <div className='fila'>
           <BotonClear manejarClear={()=> setInput('')}  >
@@ -50,6 +53,7 @@ function App() {
           </BotonClear>
         </div>
       </div>
+      <LogoContenedor/>
     </div>
   );
 }
