@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/calculator/static/css/main.4af285b1.css",
-    "main.js": "/calculator/static/js/main.ed058261.js",
+    "main.css": "/calculator/static/css/main.6f822dcf.css",
+    "main.js": "/calculator/static/js/main.a8230537.js",
     "static/media/DS-DIGIT.TTF": "/calculator/static/media/DS-DIGIT.063ff1f714df69f9ff9d.TTF",
     "static/media/freecodecamp-logo.png": "/calculator/static/media/freecodecamp-logo.5486935b905c7949600c.png",
     "index.html": "/calculator/index.html",
-    "main.4af285b1.css.map": "/calculator/static/css/main.4af285b1.css.map",
-    "main.ed058261.js.map": "/calculator/static/js/main.ed058261.js.map"
+    "main.6f822dcf.css.map": "/calculator/static/css/main.6f822dcf.css.map",
+    "main.a8230537.js.map": "/calculator/static/js/main.a8230537.js.map"
   },
   "entrypoints": [
-    "static/css/main.4af285b1.css",
-    "static/js/main.ed058261.js"
+    "static/css/main.6f822dcf.css",
+    "static/js/main.a8230537.js"
   ]
 }
